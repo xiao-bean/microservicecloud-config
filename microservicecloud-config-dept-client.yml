@@ -14,15 +14,15 @@ spring:
     driver-class-name: org.gjt.mm.mysql.Driver
     url: jdbc:mysql://localhost:3306/cloudDB01
     username: root
-    password: 123456
+    password: system
     dbcp2:
       min-idle: 5
       initial-size: 5
       max-total: 5
       max-wait-millis: 200 
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+  config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: com.atguigu.springcloud.entity
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
  
@@ -51,7 +51,7 @@ spring:
     driver-class-name: org.gjt.mm.mysql.Driver
     url: jdbc:mysql://localhost:3306/cloudDB02
     username: root
-    password: 123456
+    password: system
     dbcp2:
       min-idle: 5
       initial-size: 5
@@ -60,8 +60,8 @@ spring:
   
   
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+  config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: com.atguigu.springcloud.entity
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
  
